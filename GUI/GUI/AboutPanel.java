@@ -9,7 +9,11 @@ import java.awt.event.WindowEvent;
 
 
 final class AboutPanel extends JDialog implements ActionListener {
-    JEditorPane editPane;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	JEditorPane editPane;
     LineBorder lineBorder1 = new LineBorder(java.awt.Color.black);
     JButton closeB = new JButton();
     JScrollPane scrollPane1;
@@ -22,7 +26,7 @@ final class AboutPanel extends JDialog implements ActionListener {
 
     public void processWindowEvent(WindowEvent e) {
         super.processWindowEvent(e);
-        if (e.getSource() == this && e.getID() == e.WINDOW_CLOSING) {
+        if (e.getSource() == this && e.getID() == WindowEvent.WINDOW_CLOSING) {
             setVisible(false);
         }
     }

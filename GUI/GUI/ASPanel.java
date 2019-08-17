@@ -37,7 +37,11 @@ import java.io.IOException;
 
 final class ASPanel extends JPanel implements ActionListener {
 
-    int bwDist = -1;           //default values
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	int bwDist = -1;           //default values
     double bwMin = -1.0;
     double bwMax = -1.0;
     boolean needConvert = false;
