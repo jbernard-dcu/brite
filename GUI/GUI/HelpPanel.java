@@ -9,7 +9,12 @@ import java.awt.event.WindowEvent;
 
 
 final class HelpPanel extends JDialog implements ActionListener {
-    JButton closeB = new JButton("Close Help Window");
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	JButton closeB = new JButton("Close Help Window");
 
     JScrollPane scrollPane1;
     JEditorPane editPane;
@@ -24,7 +29,7 @@ final class HelpPanel extends JDialog implements ActionListener {
 
     public void processWindowEvent(WindowEvent e) {
         super.processWindowEvent(e);
-        if (e.getSource() == this && e.getID() == e.WINDOW_CLOSING) {
+        if (e.getSource() == this && e.getID() == WindowEvent.WINDOW_CLOSING) {
             setVisible(false);
         }
     }

@@ -9,7 +9,11 @@ import java.awt.event.WindowEvent;
 
 
 final class StatusDialog extends JDialog implements ActionListener {
-    JButton closeB = new JButton("Close Status Window");
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	JButton closeB = new JButton("Close Status Window");
     JButton cancelB = new JButton("Cancel Generation");
     JTextArea statusText = new JTextArea();
     JScrollPane scrollPane1;
@@ -31,7 +35,7 @@ final class StatusDialog extends JDialog implements ActionListener {
 
     public void processWindowEvent(WindowEvent e) {
         super.processWindowEvent(e);
-        if (e.getSource() == this && e.getID() == e.WINDOW_CLOSING) {
+        if (e.getSource() == this && e.getID() == WindowEvent.WINDOW_CLOSING) {
             statusText.setText("");
             setVisible(false);
         }

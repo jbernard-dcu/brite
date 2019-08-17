@@ -10,7 +10,12 @@ import java.io.*;
 
 public final class Brite extends JDialog implements ActionListener, Runnable {
 
-    public void init() {
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public void init() {
         getContentPane().setLayout(null);
         getContentPane().setBackground(new java.awt.Color(204, 204, 204));
         setSize(494, 550);
@@ -492,7 +497,7 @@ public final class Brite extends JDialog implements ActionListener, Runnable {
 
     public void processWindowEvent(WindowEvent e) {
         super.processWindowEvent(e);
-        if (e.getID() == e.WINDOW_CLOSING) {
+        if (e.getID() == WindowEvent.WINDOW_CLOSING) {
             sd.dispose();
             hPanel.dispose();
             System.exit(0);

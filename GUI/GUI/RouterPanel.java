@@ -34,7 +34,11 @@ import java.io.*;
 
 public final class RouterPanel extends JPanel implements ActionListener {
 
-    int bwDist = -1;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	int bwDist = -1;
     double bwMax = -1.0;
     double bwMin = -1.0;
     boolean needConvert = false;

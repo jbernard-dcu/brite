@@ -33,7 +33,11 @@ import java.io.*;
 
 
 public final class TDPanel extends JPanel implements ActionListener {
-    JLabel JLabel1 = new JLabel();
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	JLabel JLabel1 = new JLabel();
     EtchedBorder etchedBorder1 = new EtchedBorder();
     LineBorder lineBorder1 = new LineBorder(java.awt.Color.black);
     JLabel TDLabel = new JLabel();

@@ -9,7 +9,11 @@ import java.awt.event.ActionListener;
 
 final class ExportPanel extends JPanel implements ActionListener {
 
-    EtchedBorder etchedBorder1 = new EtchedBorder();
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	EtchedBorder etchedBorder1 = new EtchedBorder();
     LineBorder lineBorder1 = new LineBorder(java.awt.Color.black);
     JLabel JLabel30 = new JLabel();
     JLabel JLabel31 = new JLabel();

@@ -33,7 +33,11 @@ import java.io.*;
 
 
 final class BUPanel extends JPanel implements ActionListener {
-    String BW_CONSTANT = "Constant";
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	String BW_CONSTANT = "Constant";
     String BW_UNIFORM = "Uniform";
     String BW_EXPONENTIAL = "Exponential";
     String BW_HEAVYTAILED = "Heavy Tailed";
